@@ -1,0 +1,15 @@
+1-the user specifies a URL in their browser.
+ the browser initiates a TCP connection to the Web server via its IP address as published in DNS.
+ (Web servers by default use TCP port 80 to service incoming requests.).
+ As part of this process, the browser also makes DNS lookup requests to convert the URL to an IP address.
+2-after the server completes acknowledgment of its side of the TCP connection, the browser sends HTTP requests to the server to retrieve content for the URL.
+
+3-after the server replies with content for the Web page, the browser retrieves the content from the HTTP packets and display it accordingly.
+ Content can include embedded URLs for advertising banners or other third-party content,
+ that in turn triggers the browser to issue new TCP connection requests to those locations.
+ The browser may also save temporary information about its connections to local files on the client computer called cookies.
+
+4-The web server receives the request and checks for the desired page. If the page exists, the web server sends it.
+ If the server cannot find the requested page, it will send an HTTP 404 error message.
+ (404 means 'Page Not Found' as anyone who has surfed the web probably knows.).
+ after the server replies with content for the Web page,the browser retrieves the content from the HTTP packets and display it accordingly.
